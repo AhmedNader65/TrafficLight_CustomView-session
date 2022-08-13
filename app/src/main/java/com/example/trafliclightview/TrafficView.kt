@@ -31,15 +31,12 @@ class TrafficView @JvmOverloads constructor(
 
     private var radius = 0F
     private var circleHeight = 0F
-    private var speed = 5
     private var status = TrafficStatus.RED
-    private val pointerPosition = PointF(0F, 0F)
 
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
         style = Paint.Style.FILL
         textAlign = Paint.Align.CENTER
         textSize = 55F
-
     }
 
     init {
